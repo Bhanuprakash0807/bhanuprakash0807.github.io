@@ -35,8 +35,8 @@ const indefiniteArticles = ["a", "an"];
 analyzeBtn.addEventListener("click", function () {
   const text = textInput.value.trim();
 
-  if (text.length === 0) {
-    alert("Please enter some text to analyze");
+  if (text.length < 10000) {
+    alert("Please enter atleast 10000 words for the text to analyze");
     return;
   }
 
